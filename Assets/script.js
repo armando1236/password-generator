@@ -10,7 +10,8 @@ var possNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 function userPrompts(){
 }
-
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
  function generatePassword() {
 
@@ -71,5 +72,4 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
