@@ -42,6 +42,11 @@ function userPrompts(){
     generatePassword();
   }
 
+  console.log(LowerCaseChars)
+  console.log(UpperCaseChars)
+  console.log(NumberChars)
+  console.log(SpChars)
+  console.log(passwordLength)
 
 
 function writePassword() {
