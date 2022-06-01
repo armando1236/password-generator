@@ -1,7 +1,4 @@
-// Assignment code here
 
-
-// Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 var possibleChars = []
 var passwordArray = []
@@ -12,12 +9,8 @@ var possNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 
 function userPrompts(){
-
 }
- function generatePassword() {
 
-
- }
 
  function generatePassword() {
 
@@ -27,8 +20,8 @@ function userPrompts(){
     return generatePassword();
   }
 
-  if (passwordLength < 8 || passwordLenth > 128) {
-    alert("You need to select a length between 8 and 128.")
+  if (passwordLength < 8 || passwordLength > 128) {
+    alert("You need to select a length between 8 and 128.");
     return generatePassword() 
   
   }
@@ -63,9 +56,12 @@ function userPrompts(){
 
 for (var i = 0; i < passwordLength; i++) {
   var randomNum = Math.floor(Math.random() * possibleChars.length)
+  passwordArray.push(possibleChars[randomNum])
 }
 
+return passwordArray.join("")
 
+ }
 
 function writePassword() {
   var password = generatePassword();
