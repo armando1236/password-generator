@@ -48,6 +48,24 @@ function userPrompts(){
   console.log(SpChars)
   console.log(passwordLength)
 
+  if (LowerCaseChars) {
+    possibleChars = possibleChars.concat(possLowerCase);
+  }
+  if (UpperCaseChars) {
+  possibleChars = possibleChars.concat(possUpperCase);
+  }
+  if (NumberChars) {
+    possibleChars = possibleChars.concat(possNumbers);
+  }
+  if(SpChars) {
+    possibleChars = possibleChars.concat(possibleChars);
+  }
+
+for (var i = 0; i < passwordLength; i++) {
+  var randomNum = Math.floor(Math.random() * possibleChars.length)
+}
+
+
 
 function writePassword() {
   var password = generatePassword();
